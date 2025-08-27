@@ -7,9 +7,14 @@ body {
 
 #container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    width: 500px;
+    flex-wrap: wrap;
+    height: 480px;
+    width: 480px;
     background-color: white;
+}
+
+.box {
+    background-color: grey;
+    height: 30px;
+    width: 30px;
 }
