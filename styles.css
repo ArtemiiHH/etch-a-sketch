@@ -1,13 +1,19 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex-grow: ;
+
     background-color: black;
     height: 100vh;
     overflow: hidden;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
 }
 
-#container {
+#board {
     display: flex;
     flex-direction: column;
     height: 500px;
@@ -23,4 +29,8 @@ body {
 .cell {
     flex: 1;
     border: solid 1px black;
+}
+
+h1 {
+    margin: 0;
 }
