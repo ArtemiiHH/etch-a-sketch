@@ -7,14 +7,18 @@ body {
 
 #container {
     display: flex;
-    flex-wrap: wrap;
-    height: 480px;
-    width: 480px;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
     background-color: white;
 }
 
-.box {
-    background-color: grey;
-    height: 30px;
-    width: 30px;
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.cell {
+    flex: 1;
+    border: solid 1px red;
 }
