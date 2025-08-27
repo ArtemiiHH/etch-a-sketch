@@ -3,7 +3,11 @@
 
 
 // Add container to DOM
-const container = document.querySelector('#container');
+const container = document.querySelector('#board');
+
+// Buttons
+const changeGridSizeBtn = document.querySelector('.change-grid-btn');
+const clearBtn = document.querySelector('.clear-btn');
 
 // Loop to create 16x16 grid
 for (let i = 0; i < 16; i++) {
@@ -20,8 +24,8 @@ for (let i = 0; i < 16; i++) {
 };
 
 // Event listener on all container (checks if its a cell)
-container.addEventListener('mouseover', (e) => {
-    if (e.target.classList.contains('cell')) {
-        e.target.style.backgroundColor = 'red';
-    }
-});
+// container.addEventListener('mouseover', (e) => {
+//     if (e.target.classList.contains('cell')) {
+//         e.target.style.backgroundColor = 'red';
+//     }
+// });
