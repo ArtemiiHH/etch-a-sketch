@@ -1,8 +1,10 @@
 body {
     display: flex;
     justify-content: center;
-
+    align-items: center;
     background-color: black;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #container {
@@ -20,5 +22,5 @@ body {
 
 .cell {
     flex: 1;
-    border: solid 1px red;
+    border: solid 1px black;
 }
