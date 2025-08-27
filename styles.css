@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    gap: 70px;
 
     background-color: black;
     color: white;
@@ -37,4 +38,20 @@ body {
 h1 {
     margin: 0;
     padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.buttons button{
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: solid 3px darkred;
+    border-radius: 15px;
+    background-color: pink;
+    color: darkred;
 }
