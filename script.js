@@ -28,12 +28,10 @@ for (let i = 0; i < 16; i++) {
 
 // Event listener on all container (checks if its a cell)
 container.addEventListener('mouseover', (e) => {
-
-    // Generate a random color
-    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-
     // Paint random color for every cell
     if (e.target.classList.contains('cell')) {
+        // Generate a random color
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
         e.target.style.backgroundColor = `#${randomColor}`;
     }
 });
@@ -58,7 +56,7 @@ changeGridSizeBtn.addEventListener('click', () => {
     // Create new grid with given input number
     if (input < 1 || input > 100 || isNaN(input)) {
         alert('Enter a valid number from 1 - 100.');
-    } else if (input >= 1 || input <= 100) {
+    } else {
         container.innerHTML = '';
         let n = input;
 
