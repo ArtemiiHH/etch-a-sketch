@@ -12,9 +12,8 @@ body {
 #container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
+  gap: 30px;
+  margin: 0 auto;
 }
 
 #board {
@@ -40,8 +39,9 @@ h1 {
   padding: 20px;
 }
 
-.buttons {
+div.buttons {
   display: flex;
+  justify-content: space-between;
   gap: 50px;
 }
 
