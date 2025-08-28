@@ -25,8 +25,10 @@ for (let i = 0; i < 16; i++) {
 
 // Event listener on all container (checks if its a cell)
 container.addEventListener('mouseover', (e) => {
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+
     if (e.target.classList.contains('cell')) {
-        e.target.style.backgroundColor = 'red';
+        e.target.style.backgroundColor = `#${randomColor}`;
     }
 });
 
