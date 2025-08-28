@@ -5,6 +5,9 @@
 // Add container to DOM
 const container = document.querySelector('#board');
 
+// Result text
+const result = document.querySelector('h2');
+
 // Buttons
 const changeGridSizeBtn = document.querySelector('.change-grid-btn');
 const clearBtn = document.querySelector('.clear-btn');
@@ -43,6 +46,7 @@ clearBtn.addEventListener('click', () => {
     // Change background color of the cells to default
     for (const cell of allCells) {
         cell.style.backgroundColor = '';
+        result.textContent = `Canvas was cleared`;
     }
 });
 
@@ -70,5 +74,8 @@ changeGridSizeBtn.addEventListener('click', () => {
 
             container.appendChild(row);
         }
+
+        // Display text result of changing grid size
+        result.textContent = `You have changed the grid to ${n}x${n} pixels`;
     }
 });

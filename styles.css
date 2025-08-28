@@ -39,6 +39,11 @@ h1 {
   padding: 20px;
 }
 
+h2 {
+    align-self: center;
+    color: darkred;
+}
+
 div.buttons {
   display: flex;
   justify-content: space-between;
