@@ -1,56 +1,66 @@
 body {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
-    margin: 0;
+  background-color: rgb(235, 142, 158);
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
 }
 
 #container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 }
 
 #board {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    width: 500px;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  background-color: white;
 }
 
 .row {
-    display: flex;
-    flex: 1;
+  display: flex;
+  flex: 1;
 }
 
 .cell {
-    flex: 1;
-    border: solid 1px black;
+  flex: 1;
+  border: solid 1px black;
 }
 
 h1 {
-    margin: 0;
-    padding: 20px;
+  margin: 0;
+  padding: 20px;
 }
 
 .buttons {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
-.buttons button{
-    padding: 12px 30px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: solid 3px darkred;
-    border-radius: 15px;
-    background-color: pink;
-    color: darkred;
+.buttons button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: solid 3px darkred;
+  border-radius: 15px;
+  background-color: pink;
+  color: darkred;
+}
+
+.buttons button:hover {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: solid 3px darkred;
+  border-radius: 15px;
+  background-color: rgb(248, 147, 164);
+  color: darkred;
 }
