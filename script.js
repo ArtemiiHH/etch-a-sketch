@@ -31,16 +31,21 @@ container.addEventListener('mouseover', (e) => {
 });
 
 // Button actions
-clearBtn.addEventListener('click', () => {
-    location.reload();
-});
+// Clear Button
+// clearBtn.addEventListener('click', (e) => {
+//     if (e.target.classList.contains('cell')) {
+//         e.target.style.backgroundColor = 'white';
+//     }
+// });
 
+// Change Grid Size Button
 changeGridSizeBtn.addEventListener('click', () => {
     const input = Number(prompt('Enter a number of squares you want on each side (1 - 100)'));
 
-    if (input < 1 || input > 100) {
+    if (input < 1 || input > 100 || isNaN(input)) {
         alert('Insert a valid number from 1 - 100.');
     } else if (input >= 1 || input <= 100) {
+        container.innerHTML = 'none'
         let n = input;
 
         for (let i = 0; i < n; i++) {
