@@ -36,5 +36,26 @@ clearBtn.addEventListener('click', () => {
 });
 
 changeGridSizeBtn.addEventListener('click', () => {
-    const input = prompt('Enter a number of squares you want on each side (1 - 100)');
+    const input = Number(prompt('Enter a number of squares you want on each side (1 - 100)'));
+
+    if (input < 1 || input > 100) {
+        alert('Insert a valid number from 1 - 100.');
+    } else if (input >= 1 || input <= 100) {
+        let n = input;
+
+        for (let i = 0; i < n; i++) {
+            const row = document.createElement('div');
+            row.classList.add('row');
+
+            for (let j = 0; j < n; j++) {
+                const cell = document.createElement('div');
+                cell.classList.add('cell');
+                row.appendChild(cell);
+            }
+
+            container.appendChild(row);
+        }
+
+
+    }
 });
