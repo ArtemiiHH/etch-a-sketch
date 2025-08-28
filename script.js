@@ -34,3 +34,7 @@ container.addEventListener('mouseover', (e) => {
 clearBtn.addEventListener('click', () => {
     location.reload();
 });
+
+changeGridSizeBtn.addEventListener('click', () => {
+    
+});
