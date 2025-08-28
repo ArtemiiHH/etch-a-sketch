@@ -25,8 +25,11 @@ for (let i = 0; i < 16; i++) {
 
 // Event listener on all container (checks if its a cell)
 container.addEventListener('mouseover', (e) => {
+
+    // Generate a random color
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
 
+    // Paint random color for every cell
     if (e.target.classList.contains('cell')) {
         e.target.style.backgroundColor = `#${randomColor}`;
     }
@@ -35,7 +38,9 @@ container.addEventListener('mouseover', (e) => {
 // Button actions
 // Clear Button
 clearBtn.addEventListener('click', () => {
+    // Get all cells
     const allCells = document.querySelectorAll('.cell');
+    // Change background color of the cells to default
     for (const cell of allCells) {
         cell.style.backgroundColor = '';
     }
@@ -43,8 +48,10 @@ clearBtn.addEventListener('click', () => {
 
 // Change Grid Size Button
 changeGridSizeBtn.addEventListener('click', () => {
+    // Input window
     const input = Number(prompt('Enter a number of squares you want on each side (1 - 100)'));
 
+    // Create new grid with given input number
     if (input < 1 || input > 100 || isNaN(input)) {
         alert('Enter a valid number from 1 - 100.');
     } else if (input >= 1 || input <= 100) {
